@@ -17,6 +17,10 @@ CFLAGS := -g -Wall -std=c++17 $(INCS)
 # Target for the executable
 all: $(EXECUTABLE)
 
+# Create Directories
+$(OBJ) $(BIN):
+	mkdir -p $@
+
 # Link object files to create the final executable
 $(EXECUTABLE): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $(BIN)/$(EXECUTABLE)
