@@ -54,8 +54,6 @@ int main()
         // Get Message to Encyrpt
         std::string message = get_message();
 
-        std::cout << "Message to Encrypt/Decrypt: " << message << std::endl;
-
         // Get a Random Key
         std::vector<uint8_t> key = getrandkey();
 
