@@ -15,7 +15,7 @@ CC := g++
 CFLAGS := -g -Wall -std=c++17 $(INCS)
 
 # Target for the executable
-all: $(EXECUTABLE)
+all: $(OBJ) $(BIN) $(EXECUTABLE)
 
 # Create Directories
 $(OBJ) $(BIN):
